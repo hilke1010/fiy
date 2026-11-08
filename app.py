@@ -589,4 +589,4 @@ else:
             f'<span>Değişim: <b style="color:{color}">{fmt(delta,signed=True)} TL</b></span>'
             '</div></div>',unsafe_allow_html=True)
         with st.expander('Fiyatların ve farkın dönemler arasında nasıl değiştiğini inceleyin',expanded=(i==0)):
-            st.markdown('Sistem fiyatların ekonomik açıdan olumlu veya olumsuz olduğunu değerlendirmez.')
+            
