@@ -100,13 +100,6 @@ def parse_shared(digest, path, filename, source_mode):
     })
 
 
-@st.fragment(run_every='15s')
-def # watch_shared_file():
-    """Yeni sürüm yayımlanırsa açık mobil/masaüstü oturumlarını yenile."""
-    info=current_info()
-    if info and st.session_state.get('shared_revision_seen') != info['sha256']:
-        st.session_state['shared_revision_seen']=info['sha256']
-        st.rerun()
 
 
 @st.cache_data(max_entries=16,show_spinner=False,ttl=1200)
