@@ -291,7 +291,7 @@ with st.sidebar:
         elif pin:
             st.error('Güncelleme kodu yanlış.')
         else:
-            st.caption('Yalnız yönetici Excel verisini güncelleyebilir. Görüntüleme için kod gerekmez.')
+            st.caption('.....')
     if 'upload_notice' in st.session_state:
         st.success(st.session_state.pop('upload_notice'))
 
