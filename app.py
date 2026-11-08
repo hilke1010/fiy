@@ -303,7 +303,7 @@ with st.sidebar:
         st.success(st.session_state.pop('upload_notice'))
 
 st.markdown('<div class="hero"><span class="tag">Fiyat Karsilastirma v1</span>'
-  '<h1>🔷 LİKİTGAZ · FİYAT KARŞILAŞTIRMA MERKEZİ</h1>'
+  '<h1>🔷  · FİYAT KARŞILAŞTIRMA MERKEZİ</h1>'
   '<p>Türkiye haritası &nbsp; • &nbsp; Tek dönemsel fark matrisi &nbsp; • &nbsp;  Yönetici analizi</p></div>',unsafe_allow_html=True)
 if info is None:
     st.info('**En kolay yol:** `fiyat.xlsx` dosyasını `app.py` ile aynı klasöre koyun. Başka işlem gerekmez; tüm cihazlar aynı dosyayı görür. İsterseniz soldan dosya yükleyip de yayımlayabilirsiniz.')
