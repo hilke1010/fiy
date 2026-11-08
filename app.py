@@ -590,5 +590,4 @@ else:
             '</div></div>',unsafe_allow_html=True)
              with st.expander('Fiyatların ve farkın dönemler arasında nasıl değiştiğini inceleyin',expanded=(i==0)):
             st.markdown(r['Açıklama'])
-    st.caption('Açıklamalar yüklenen fiyat kayıtları üzerinden üretilir.)
-            
+    st.caption('Açıklamalar yüklenen fiyat kayıtları üzerinden üretilir. ....')
