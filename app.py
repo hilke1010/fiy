@@ -573,7 +573,7 @@ else:
     st.caption('Bulgular fiyat farkındaki mutlak değişim büyüklüğüne göre sıralanır. Açıklamalar seçilen dönemlerde geçerli olan gerçek kayıtlara dayanır.')
     maxn=min(30,len(result))
     limit=st.slider('Görüntülenecek analiz sayısı',1,maxn,min(12,maxn),key='v9_manager_limit')
-     for i,r in result.head(limit).iterrows():
+    for i,r in result.head(limit).iterrows():
         aa=company_label(r['Referans']);bb=company_label(r['Rakip'])
         old=r['Önceki_Fark'];new=r['Güncel_Fark'];delta=r['Fark_Değişimi']
         symbol='↔️' if r['Yön_Değişti'] else '📊'
@@ -588,7 +588,7 @@ else:
             f'<span>Güncel: <b>{fmt(new,signed=True)} TL</b></span>'
             f'<span>Değişim: <b style="color:{color}">{fmt(delta,signed=True)} TL</b></span>'
             '</div></div>',unsafe_allow_html=True)
-      with st.expander('Fiyatların ve farkın dönemler arasında nasıl değiştiğini inceleyin',expanded=(i==0)):
+        with st.expander('Fiyatların ve farkın dönemler arasında nasıl değiştiğini inceleyin',expanded=(i==0)):
             st.markdown(r['Açıklama'])
-    st.caption('Açıklamalar yüklenen fiyat kayıtları üzerinden üretilir. .....')
+    st.caption('Açıklamalar yüklenen fiyat kayıtları üzerinden üretilir. ....')
 
