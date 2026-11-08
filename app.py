@@ -23,7 +23,7 @@ from shared_store import current_info, publish, read_source
 from price_chart import change_dates, movement_series, price_chart
 from relative_comparison import compare_transitions, explain_movement, plot_relative_history
 
-st.set_page_config(page_title='Likitgaz • Fiyat Karşılaştırma V9 Ortak Veri',page_icon='🔷',layout='wide',initial_sidebar_state='collapsed')
+st.set_page_config(page_title=' • Fiyat Karşılaştırma V1 Açık Kaynak Veri!!!',page_icon='🔷',layout='wide',initial_sidebar_state='collapsed')
 
 BLUE='#388dff';RED='#ff5878';GREEN='#20dcb0';GOLD='#f4c96d'
 st.markdown('''<style>
