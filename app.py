@@ -305,7 +305,7 @@ if info is None:
         '<span class="legend">🔵 Likitgaz referans fiyatı</span>',unsafe_allow_html=True)
     st.stop()
 st.session_state.setdefault('shared_revision_seen',info['sha256'])
-watch_shared_file()
+#watch_shared_file()
 try:
     with st.spinner('Güncel ortak fiyat verisi okunuyor...'):
         data,quality=parse_shared(info['sha256'],info['path'],info['original_name'],info.get('mode','published'))
