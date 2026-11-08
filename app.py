@@ -568,7 +568,7 @@ else:
     st.markdown('<div class="kpi-note">📍 <b>Dönem okuma:</b> '
        'Fark, referans şirketin fiyatından rakip fiyatının çıkarılmasıyla bulunur. '
        'Likitgaz karşılaştırmasında referans daima Likitgaz’dır. '
-       'Farkın büyüklüğü veya işareti iyi/kötü olarak yorumlanmaz.</div>',unsafe_allow_html=True)
+       'F..</div>',unsafe_allow_html=True)
     st.markdown('### 📑 Dönemsel Fiyat Farkı Analizleri')
     st.caption('Bulgular fiyat farkındaki mutlak değişim büyüklüğüne göre sıralanır. Açıklamalar seçilen dönemlerde geçerli olan gerçek kayıtlara dayanır.')
     maxn=min(30,len(result))
