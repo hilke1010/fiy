@@ -272,7 +272,7 @@ with st.sidebar:
     else:
         st.info('Henüz ortak Excel yok. `fiyat.xlsx` dosyasını `app.py` yanına koyun veya aşağıdan yayımlayın.')
     st.caption('Açık Kaynak Veri!  `fiyat.xlsx` Exceli değiştirmek yeterlidir , Değiştirmek için benimle iletişime geçebilirsiniz :) , Veri yenileme süresi 5 dakika  .')
-    with st.expander('🔐 Yönetici: Yeni Excel yayımla',expanded=False):
+    with st.expander('🔐  Yeni Excel yayımla',expanded=False):
         pin=st.text_input('Excel güncelleme kodu',type='password',key='v9_admin_pin')
         if pin == source_pin():
             uploaded=st.file_uploader('Excel / CSV',type=['xlsx','xls','csv'],
